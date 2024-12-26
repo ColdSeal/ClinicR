@@ -32,13 +32,7 @@ A chatbot demo implemented using **Streamlit** to interactively showcase the pip
 - `chatbot_demo_hf.py`: Main chatbot script.
 - `reward_model/`: Includes LoRA-finetuned checkpoints for reward modeling.
 
-### 4. `models/`
-Contains pretrained and LoRA-finetuned reward models:
-- **`Reward_models/`**:
-  - `llama2-7B-chat-reward_model/`: Reward model trained on Llama2-7B-chat.
-  - `llama2-70B-chat-reward_model/`: Reward model trained on Llama2-70B-chat.
-
-### 5. `data_annotator_stats/`
+### 4. `data_annotator_stats/`
 Includes evaluation results and annotations from human evaluators.
 - `intern_responses/`: Responses and reasoning from medical experts on various datasets.
 
@@ -64,7 +58,7 @@ Includes evaluation results and annotations from human evaluators.
    python forward_backward.py
 2. Training Reward Models:
    - Refer to the reasoning_verifier/README.md for detailed instructions on training.
-4. Chatbot Demo:
+3. Chatbot Demo:
    - Navigate to chatbot_demo/ and run the Streamlit demo:
    ```bash
    streamlit run chatbot_demo_hf.py
