@@ -1,6 +1,6 @@
 # Project: Few shot chain-of-thought driven reasoning to prompt LLMs for open-ended medical question answering
 
-This repository implements and demonstrates advanced prompting strategies and reward modeling techniques for NLP tasks, particularly using Llama2 models and LoRA finetuning.
+This repository implements and demonstrates advanced prompting strategies and reward modelling techniques for NLP tasks, particularly using Llama2 models and LoRA finetuning.
 
 ---
 
@@ -30,12 +30,18 @@ This folder contains Jupyter notebooks showcasing the following strategies:
 ### 3. `chatbot_demo/`
 A chatbot demo implemented using **Streamlit** to interactively showcase the pipeline.
 - `chatbot_demo_hf.py`: Main chatbot script.
-- `reward_model/`: Includes LoRA-finetuned checkpoints for reward modeling.
+- `reward_model/`: Includes LoRA-finetuned checkpoints for reward modelling.
 
 ### 4. `data_annotator_stats/`
 Includes evaluation results and annotations from human evaluators.
 - `intern_responses/`: Responses and reasoning from medical experts on various datasets.
 
+### 5. `Datasets/`
+Includes the dataset that we have used for performing various experiments listed in our paper, as well as the model responses for different variants of the MedQA USMLE dataset using the devised prompting strategies
+- `Model Responses/`: Includes the model responses (Llama-2 7B and Llama-2 70B) using the four prompting strategies on the  MedQA USMLE open-ended dataset and Clinician's Case studies dataset
+- Clinician's Case studies dataset.xlsx - Includes the real-world patient case studies following the format of MedQA USMLE open-ended dataset (No sensitive information is revealed in any of the questions)
+- Dataset for training the verifier (Reward Model).xlsx - Includes the dataset (positive and negative pairs) with which we trained the verifier (Llama-2 7B and Llama-2 70B as the base models) for our fourth reward mechanism-based prompting strategy
+- MedQA no-opt dataset with reasoning.xlsx - Includes the open-ended version of the original MedQA USMLE (MCQ-based) dataset mimicking the real-world scenarios along with the responses generated using Llama-2 70B given the question and the correct answer as the inputs (The objective was to generate the reasoning for the correct answer)
 ---
 
 ## Usage
