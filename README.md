@@ -1,4 +1,4 @@
-# Project: Few shot chain-of-thought driven reasoning to prompt LLMs for open-ended medical question answering
+# Paper: Few shot chain-of-thought driven reasoning to prompt LLMs for open-ended medical question answering
 
 This repository implements and demonstrates advanced prompting strategies and reward modelling techniques for NLP tasks, particularly using Llama2 models and LoRA finetuning.
 
